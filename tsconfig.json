@@ -24,6 +24,7 @@
       // "@/*": ["./src/*"],
       "@/public/*": ["public/*"],
       "@/app/*": ["src/app/*"],
+      "@/api/*": ["src/app/api/*"],
       "@/utils/*": ["src/utils/*"],
       "@/models/*": ["src/models/*"],
       "@/providers/*": ["src/providers/*"],
@@ -32,6 +33,6 @@
       "@/template/*": ["src/components/template/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/utils/connectDB.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/utils/connectDB.ts"],
   "exclude": ["node_modules"]
 }
