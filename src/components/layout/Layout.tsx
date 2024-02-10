@@ -10,7 +10,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div>
       <Header />
-      <div className="min-h-[700px]">{children}</div>
+      <div className="min-h-[700px] ">{children}</div>
       <Footer />
     </div>
   );
