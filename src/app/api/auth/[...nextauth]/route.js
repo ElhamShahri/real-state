@@ -1,5 +1,5 @@
 import NextAuth from "next-auth";
-import { CredentialsProvider } from "next-auth/providers/credentials";
+import CredentialsProvider from "next-auth/providers/credentials"
 import User from "@/models/User";
 // import connectDB from "@/utils/connectDB";
 import connectDB from "../../../../utils/connectDB";
@@ -33,4 +33,7 @@ const authOptions = {
 };
 
 const handler = NextAuth(authOptions);
-export { handler as Get, handler as Post };
+export { handler as GET, handler as POST };
+
+// export default NextAuth(authOptions);
+

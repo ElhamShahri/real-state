@@ -2,7 +2,6 @@ import mongoose from "mongoose";
 const MONGODB_URL = "mongodb://localhost:27017";
 
 async function connectDB(): Promise<void> {
-  console.log("Hi");
   // if (mongoose.connection[0].readyState) return;
   console.log(mongoose.connection.readyState);
   if (mongoose.connection.readyState !== 0) return;
